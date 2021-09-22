@@ -24,9 +24,9 @@ Note, that some actions are performed in different ways (intentionally). For ins
   5) *stop_bits*    - stop bits count (valid values are: 1.0, 1.5, 2.0).
 Note, UART settings are made corresponding to how they are usually described (for instance, "8N1" stands for 8 data bits, No parity check, 1 stop bit).
 
-**Ports description** (of top-level module *'uart.vhd'*):
-  1) *clk*      - **input**  - clock signal;
-  2) *areset_n* - **input**  - asynchronous reset signal (active LOW);
+**Ports description** (of top-level module *'uart.vhd'*): /n
+*clk*      - **input**  - clock signal; \n
+*areset_n* - **input**  - asynchronous reset signal (active LOW);
 --*UART transmitter*--
   3) *irq_tx*   - **input**  - transmitter interrupt signal, used to start transaction (note, it is ignored when *busy* is high);
   4) *data*     - **input**  - data to be transmitted (*data_bits*-wide);
