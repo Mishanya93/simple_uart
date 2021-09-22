@@ -10,7 +10,7 @@ This project was made mostly for educational purposes to show some of most power
   5) 'FOR-LOOP' statements for description of repetitive circuits;
   6) 'FUNCTION' keyword to define functions;
   7) 'PACKAGE-PACKAGE BODY' statement to define types, constants and components commonly used in several modules;
-  8) 'ASSERT' keyword to generate notes, warnings and error messages to show up during simulation
+  8) 'ASSERT' keyword to generate notes, warnings and error messages to show up during simulation  
   and so on.
   
 Note, that some actions are performed in different ways (intentionally). For instance, in 'parity_check.vhd' module calculation of even parity bit is performed sequentially (step-by-step during several clock cycles), as in 'pkg_functions.vhd' this problem is solved with FUNCTION to generate a parallel circuit, consisting of several XOR-elements.
