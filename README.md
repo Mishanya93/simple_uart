@@ -25,12 +25,12 @@ Note, that some actions are performed in different ways (intentionally). For ins
 Note, UART settings are made corresponding to how they are usually described (for instance, "8N1" stands for 8 data bits, No parity check, 1 stop bit).
 
 **Ports description** (of top-level module *'uart.vhd'*):
-*clk*      - **input**  - clock signal;
-*areset_n* - **input**  - asynchronous reset signal (active LOW);
+  1) *clk*      - **input**  - clock signal;
+  2) *areset_n* - **input**  - asynchronous reset signal (active LOW);
 --*UART transmitter*--
-*irq_tx*   - **input**  - transmitter interrupt signal, used to start transaction (note, it is ignored when *busy* is high);
-*data*     - **input**  - data to be transmitted (*data_bits*-wide);
-*busy*     - **output** - signal, indicating that transmition is in progress;
+  3) *irq_tx*   - **input**  - transmitter interrupt signal, used to start transaction (note, it is ignored when *busy* is high);
+  4) *data*     - **input**  - data to be transmitted (*data_bits*-wide);
+  5) *busy*     - **output** - signal, indicating that transmition is in progress;
 --*UART receiver*--
-*irq_rx*   - **output** - receiver interrupt signal to indicate that new data have been received;
-*q*        - **output** - received data (*data_bits*-wide).
+  6) *irq_rx*   - **output** - receiver interrupt signal to indicate that new data have been received;
+  7) *q*        - **output** - received data (*data_bits*-wide).
